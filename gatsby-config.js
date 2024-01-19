@@ -3,12 +3,19 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `TLD_BLOG2`,
+    title: `TRADE LEVEL DAILY`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },
   ],
 };
