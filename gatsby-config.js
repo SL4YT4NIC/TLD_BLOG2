@@ -6,5 +6,9 @@ module.exports = {
     title: `TLD_BLOG2`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-netlify-cms"]
+  plugins: [
+    "gatsby-plugin-netlify-cms",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 };
